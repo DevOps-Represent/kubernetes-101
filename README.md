@@ -5,6 +5,7 @@
 This is a short workshop (which can be self-driven) which goes through the basics of deploying applications to Kubernetes. Before going through this workshop, make sure you have completed the following:
 
  * [Docker 101](https://github.com/DevOps-Girls/docker-101)
+ * [Command Line 101](https://github.com/DevOps-Girls/command-line-101)
  * [AWS 101](https://github.com/DevOps-Girls/devopsgirls-bootcamp)
 
 
