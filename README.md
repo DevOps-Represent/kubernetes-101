@@ -8,6 +8,8 @@ This is a short workshop (which can be self-driven) which goes through the basic
  * [Command Line 101](https://github.com/DevOps-Girls/command-line-101)
  * [AWS 101](https://github.com/DevOps-Girls/devopsgirls-bootcamp)
 
+I mean, you don't have to. But then again, *why not*?
+
 
 ## Prerequisites (Linux / Mac)
 
