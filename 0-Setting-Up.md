@@ -42,6 +42,12 @@ To start minikube, simply type the following in your terminal or command line:
 minikube start
 ```
 
+We also need to enable the ingress object, so that we can route traffic to our containers:
+
+```
+minikube addons enable ingress
+```
+
 This will setup the virtual machines required to run a minimal Kubernetes cluster. Once `minikube start` is finished, you can specify the `minikube` context from your command line:
 
 ```
@@ -54,4 +60,4 @@ To verify that you're connected to the cluster, you can run the following comman
 kubectl cluster-info
 ```
 
-
+Huzzah! You're ready!
