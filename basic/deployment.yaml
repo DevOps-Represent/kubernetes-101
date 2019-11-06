@@ -1,6 +1,6 @@
 # This is an example of a deployment - a declaration of pods.
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "devopsgirls-deployment"

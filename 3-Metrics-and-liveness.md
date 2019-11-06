@@ -31,8 +31,6 @@ kubectl apply -f metrics/deployment.yaml -n training
 kubectl apply -f metrics/service.yaml -n training
 ```
 
-Once you go to your ingress, you should be able to see a new app. Go to `/metrics` - what do you see? For example, if your app is in `https://devopsgirls.blah.com/`, then you'll need to go to `https://devopsgirls.blah.com/metrics`
-
 
 ## Liveness and Readiness checks
 

@@ -6,7 +6,7 @@ A *deployment* is a declaration of a container or a group of containers - effect
 
 ```
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "devopsgirls-deployment"
@@ -25,7 +25,7 @@ Change it to something like:
 
 ```
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "nora-lim-deployment"
@@ -85,6 +85,21 @@ Now that everything's set up, feel free to see what the URL for your app is:
 kubectl get ingress -n training
 ```
 
+This will show something similar to:
+
+```
+NAME                  HOSTS                  ADDRESS        PORTS   AGE
+devopsgirls-ingress   devopsgirls.blah.com   192.168.64.2   80      11s
+```
+
+To have the URL available for you to look at with your browser, you'll need to edit your `/etc/hosts` file (Mac/OSX) or `c:\windows\system32\drivers\etc\hosts` (Windows) with the following:
+
+```
+devopsgirls.blah.com 192.168.64.2
+```
+
+Where `192.168.64.2` is the IP address on shown on the ingress. You can now use your browser and go to `devopsgirls.blah.com` to access your deployment!
+
 Now if you need to clean up, you just need to run:
 
 ```
@@ -108,7 +123,7 @@ All you need to do is replace the name of the image and the tag in your `basic/d
 
 ```
 ---
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: "devopsgirls-deployment"
