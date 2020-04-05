@@ -54,8 +54,6 @@ A *service* is what routes the traffic to any of the pods. Because your pods may
 apiVersion: v1
 kind: Service
 metadata:
-  annotations:
-    prometheus.io/scrape: "true"
   name: "nora-lim-service"
 spec:
   ports:
