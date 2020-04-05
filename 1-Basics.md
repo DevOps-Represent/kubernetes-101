@@ -110,8 +110,6 @@ Note that you don't have to deploy everything separately. You can just combine e
 kubectl apply -f basic/combined.yaml -n training
 ```
 
-You can also see what's happening with your deployments through the Kubernetes dashboard, which you can see here: [Insert boilerplate]
-
 ## Exercise
 
 Now that you can deploy a service, see if you can change the container running on your deployment. You should be able to see publicly available containers from: https://hub.docker.com/explore/
