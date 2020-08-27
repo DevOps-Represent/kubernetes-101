@@ -1,85 +1,53 @@
-# Kubernetes 101 
+# Kubernetes 101: A Workshop
 
-## What this is
+## What This Is
 
-This is a short workshop (which can be self-driven) which goes through the basics of deploying applications to Kubernetes. Before going through this workshop, make sure you have completed the following:
+This is a workshop which introduces basic Kubernetes concepts - how to use it, why it's important, and where to get more information afterwards. This workshop is designed to be self-running, and contains practical and conceptual information inside the repository.
 
- * [Docker 101](https://github.com/DevOps-Girls/docker-101)
- * [Command Line 101](https://github.com/DevOps-Girls/command-line-101)
- * [AWS 101](https://github.com/DevOps-Girls/devopsgirls-bootcamp)
+## Prerequisites (Docker)
 
-I mean, you don't have to. But then again, *why not*?
+If you haven't done the Docker workshop yet, [you can go through it here.](https://github.com/DevOps-Girls/docker-101)
 
-## Prerequisites
+## Prerequisites (Kubernetes)
 
-Before we get started, we have a couple of things we need to set up. [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) runs a single-node Kubernetes cluster in your laptop - so you can practice setting things up without having an actual cluster.
+#### The Really Easy Way (Using Google Kubernetes Engine)
 
-### Installing Docker
+We can run the workshop with GKE (Google Kubernetes Engine), as part of Google Cloud. Google Cloud is one of the big three platform providers (along with AWS and Azure) that serve a lot of the industry - and signup is simple. It's also *free*, as long as we clean up later.
 
-Docker is the mechanism by which we create containers that we'll then deploy to Kubernetes. To install Docker, see the instructions here: ( [Instructions for Windows](https://docs.docker.com/v17.09/docker-for-windows/install/) / [Instructions for Macs](https://docs.docker.com/docker-for-mac/install/) )
+Instructions are [in this link](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Google-Cloud.md). This is the best way to go!
 
-Once you're done, make sure you signup for an account in [Docker Hub](https://hub.docker.com/). After signing up for an account, make sure you can login by running the following in your command line:
-
-```
-docker login
-```
+Use this option if you are less familiar with the command line and want to experiment with Google Cloud.
 
 
-### Installing a Hypervisor
+#### The Not-so-easy Way (Using Minikube)
 
-A hypervisor allows you to create and run virtual machines. [VirtualBox](https://www.virtualbox.org/wiki/Downloads) will be the hypervisor we'll be using for this exercise, so make sure you download and install the packages for your operating system:
+If you want to install a single-node Kubernetes cluster on your machine to play with, you can install with [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/). With this way, you'll be able to see your deployments with your browser. 
 
-* [If you are running a Windows machine, use this link](https://download.virtualbox.org/virtualbox/6.0.14/VirtualBox-6.0.14-133895-Win.exe)
+[If you are using a Windows computer, use the instructions here.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Minikube-Windows.md)
 
-* [If you are using a Mac machine, use this link](https://download.virtualbox.org/virtualbox/6.0.14/VirtualBox-6.0.14-133895-OSX.dmg)
+[Otherwise, if you are using a Mac, use the instructions here.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Minikube-Mac.md)
 
-### Installing minikube
+Use this option if you're more familiar with with the command line. Keep in mind minikube is used for testing from your local machine and could be useful for your kubernetes usecase.
 
-The easiest way to install `minikube` on Mac/OSX is to use Homebrew:
 
-```
-brew install minikube
-```
+## Prerequisites (Git)
 
-If you are using Windows, you can install `minikube` using Windows installer by downloading [this package](https://github.com/kubernetes/minikube/releases/latest/download/minikube-installer.exe).
+[Setting up git](https://docs.github.com/en/github/getting-started-with-github/set-up-git)
 
-### Installing kubectl
-
-`kubectl` is the command line tool we'll be using to interact with our local cluster - and in fact, any Kubernetes cluster in general. 
-
-To install `kubectl` in Mac/OSX, simply use Homebrew:
+After you've setup an environment with Docker and Kubernetes, you're going to need some files from this repository for parts of this workshop.
 
 ```
-brew install kubectl
+git clone https://github.com/DevOps-Girls/kubernetes-101.git
 ```
 
-To install `kubectl` in Windows, download [this executable](https://storage.googleapis.com/kubernetes-release/release/v1.16.0/bin/windows/amd64/kubectl.exe).
+You'll need to [create a Personal Access Token and use that token on the command line](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
 
+## The Workshop
 
-### Starting minikube
+ - [Part 0: Kubernetes Concepts.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/0-K8S-Concepts.md) In this part, we'll review what Kubernetes is and why companies use it.
 
-To start minikube, simply type the following in your terminal or command line:
+ - [Part 1: Kubernetes Basics, and the Command Line.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/1-Kubernetes-Basics.md) In this part, we'll go through the Kubernetes command line, and make our way into creating our first objects.
 
-```
-minikube start
-```
+ - [Part 2: Deployments and Services.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/2-Deployments-and-Services.md) In this section, we'll go through how to make our pods available to the world, and how we can update them at scale.
 
-We also need to enable the ingress object, so that we can route traffic to our containers:
-
-```
-minikube addons enable ingress
-```
-
-This will setup the virtual machines required to run a minimal Kubernetes cluster. Once `minikube start` is finished, you can specify the `minikube` context from your command line:
-
-```
-kubectl config use-context minikube
-```
-
-To verify that you're connected to the cluster, you can run the following command:
-
-```
-kubectl cluster-info
-```
-
-Huzzah! You're ready!
+ - [Part 3: Labels](https://github.com/DevOps-Girls/kubernetes-101/blob/master/3-Labels.md). In this section, we stitch everything together.
