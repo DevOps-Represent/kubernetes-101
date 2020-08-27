@@ -1,0 +1,12 @@
+# This is an example of a pod
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "devopsgirls-pod"
+  labels:
+    name: "devopsgirls-pod"
+spec:
+  containers:
+    - image: "nginx:alpine"
+      name: nginx
