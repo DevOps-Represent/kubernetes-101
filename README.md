@@ -23,7 +23,7 @@ Use this option if you are less familiar with the command line and want to exper
 
 [Setting up git](https://docs.github.com/en/github/getting-started-with-github/set-up-git)
 
-After you've setup an environment with Docker and Kubernetes, you're going to need some files from this repository for parts of this workshop.
+After you've setup an environment with Docker and Kubernetes, you're going to need some files from this repository for parts of this workshop. Make sure you clone the workshop in your Google Web Console:
 
 ```
 git clone https://github.com/DevOps-Girls/kubernetes-101.git
