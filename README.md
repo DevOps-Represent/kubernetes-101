@@ -19,17 +19,6 @@ Instructions are [in this link](https://github.com/DevOps-Girls/kubernetes-101/b
 Use this option if you are less familiar with the command line and want to experiment with Google Cloud.
 
 
-#### The Not-so-easy Way (Using Minikube)
-
-If you want to install a single-node Kubernetes cluster on your machine to play with, you can install with [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/). With this way, you'll be able to see your deployments with your browser. 
-
-[If you are using a Windows computer, use the instructions here.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Minikube-Windows.md)
-
-[Otherwise, if you are using a Mac, use the instructions here.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Minikube-Mac.md)
-
-Use this option if you're more familiar with with the command line. Keep in mind minikube is used for testing from your local machine and could be useful for your kubernetes usecase.
-
-
 ## Prerequisites (Git)
 
 [Setting up git](https://docs.github.com/en/github/getting-started-with-github/set-up-git)
