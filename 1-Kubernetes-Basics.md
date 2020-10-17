@@ -131,4 +131,4 @@ kubectl get pods devopsgirls-pod -o yaml
 
 UP NEXT...
 
-[Deployments and Services](6-Deployments-and-Services.md)
+[Deployments and Services](2-Deployments-and-Services.md)

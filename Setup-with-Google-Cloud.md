@@ -86,6 +86,16 @@ Where `devops-girls` is what you called your cluster. And now you're done and yo
 ![Credentials](images/11-final-output.png)
 
 
+After you've setup an environment with Docker and Kubernetes, you're going to need some files from this repository for parts of this workshop. Make sure you clone the workshop in your Google Web Console:
+
+```
+git clone https://github.com/DevOps-Girls/kubernetes-101.git
+cd kubernetes-101
+```
+
+You'll need to [create a Personal Access Token and use that token on the command line](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+
+
 <details><summary>Troubleshooting</summary><p>
 
 

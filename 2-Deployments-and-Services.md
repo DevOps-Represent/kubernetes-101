@@ -132,7 +132,6 @@ Now, what do you see when you list the pods afterwards with a `kubectl get pods`
 (devops-girls)$ kubectl get pods
 NAME                                     READY   STATUS              RESTARTS   AGE
 devopsgirls-deployment-d44844c8f-29tsn   1/1     Running             0          2m11s
-devopsgirls-deployment-d44844c8f-qnglw   0/1     ContainerCreating   0          6s
 ```
 
 Neat, huh?
@@ -147,4 +146,4 @@ kubectl apply -f kubes/deployment.yaml
 
 UP NEXT...
 
-[Labels](7-Labels.md)
+[Labels](3-Labels.md)
