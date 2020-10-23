@@ -41,3 +41,11 @@ You'll need to [create a Personal Access Token and use that token on the command
  - [Part 2: Deployments and Services.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/2-Deployments-and-Services.md) In this section, we'll go through how to make our pods available to the world, and how we can update them at scale.
 
  - [Part 3: Labels](https://github.com/DevOps-Girls/kubernetes-101/blob/master/3-Labels.md). In this section, we stitch everything together.
+
+
+## After The Workshop
+
+After the workshop, simply remove the cluster by clicking on the *bin* button on the cluster list page.
+
+![Google Won't Charge](images/15-cleanup.png)
+
