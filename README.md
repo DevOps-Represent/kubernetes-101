@@ -12,12 +12,9 @@ If you haven't done the Docker workshop yet, [you can go through it here.](https
 
 #### The Really Easy Way (Using Google Kubernetes Engine)
 
-We can run the workshop with GKE (Google Kubernetes Engine), as part of Google Cloud. Google Cloud is one of the big three platform providers (along with AWS and Azure) that serve a lot of the industry - and signup is simple. It's also *free*, as long as we clean up later.
+We can run the workshop with **GKE (Google Kubernetes Engine)**, as part of Google Cloud. Google Cloud is one of the big three platform providers (along with AWS and Azure) that serve a lot of the industry - and signup is simple. It's also *free*, as long as we clean up later.
 
-Instructions are [in this link](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Google-Cloud.md). This is the best way to go!
-
-Use this option if you are less familiar with the command line and want to experiment with Google Cloud.
-
+[Instructions are in this link](https://github.com/DevOps-Girls/kubernetes-101/blob/master/Setup-with-Google-Cloud.md). This is the best way to go!
 
 ## Prerequisites (Git)
 
