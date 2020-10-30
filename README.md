@@ -30,8 +30,6 @@ git clone https://github.com/DevOps-Girls/kubernetes-101.git
 cd kubernetes-101
 ```
 
-You'll need to [create a Personal Access Token and use that token on the command line](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
-
 ## The Workshop
 
  - [Part 0: Kubernetes Concepts.](https://github.com/DevOps-Girls/kubernetes-101/blob/master/0-K8S-Concepts.md) In this part, we'll review what Kubernetes is and why companies use it.

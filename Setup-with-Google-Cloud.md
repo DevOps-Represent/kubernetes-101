@@ -93,9 +93,6 @@ git clone https://github.com/DevOps-Girls/kubernetes-101.git
 cd kubernetes-101
 ```
 
-You'll need to [create a Personal Access Token and use that token on the command line](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
-
-
 <details><summary>Troubleshooting</summary><p>
 
 
