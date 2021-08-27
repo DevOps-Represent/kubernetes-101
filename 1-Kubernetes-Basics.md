@@ -4,7 +4,7 @@ In this part of the workshop, we're going to be talking about the basics of Kube
 
 ### Running commands
 
-Running commands in Kubernetes is very much similar to Docker. The command (`kubectl`) uses some verbs to define your actions (`get`, or `describe` or `create`). For example, run the following command to see all the nodes in your cluster:
+Running commands in Kubernetes is much like writing a sentence. The command (`kubectl`) uses some verbs to define your actions (`get`, or `describe` or `create`). For example, run the following command to see all the nodes in your cluster:
 
 ```
 kubectl get nodes
@@ -28,7 +28,7 @@ For example, one of the commands that is listed is `describe`. We can use `descr
 kubectl describe nodes node1
 ```
 
-Finally, we can also run containers the same way we do in Docker. Remember the `nginx` container from before? We can run that container in the cluster with one command:
+Finally, we can also run pods. We can run a pod using the reference Docker image `nginx` in the cluster with one command:
 
 ```
 kubectl run devopsgirls --image=nginx

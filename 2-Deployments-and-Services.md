@@ -2,7 +2,7 @@
 
 So the pod is up, now how do we access it?
 
-In Kubernetes, there is an object type called a `service` which functions as a load balancer. What this means is that if someone needs to talk to or access a `Pod`, then they need to go through the `Service`.
+In Kubernetes, there is an object type called a `service` which functions as a load balancer - a director of traffic. What this means is that if someone needs to talk to or access a `Pod`, then they need to go through the `Service`.
 
 ![Kubes](/images/12-services.png)
 
