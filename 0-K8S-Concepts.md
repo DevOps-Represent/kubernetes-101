@@ -56,4 +56,4 @@ In general use however, companies generally like to use *one container per pod*.
 
 UP NEXT...
 
-[Kubernetes Basics](5-Kubernetes-Basics.md)
+[Kubernetes Basics](1-Kubernetes-Basics.md)
