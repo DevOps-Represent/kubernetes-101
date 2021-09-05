@@ -8,5 +8,5 @@ metadata:
     name: "devopsgirls-pod"
 spec:
   containers:
-    - image: "nginx:alpine"
+    - image: "nginx:latest"
       name: nginx
