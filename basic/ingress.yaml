@@ -2,13 +2,13 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: "devopsgirls-ingress"
+  name: "devopsrep-ingress"
 spec:
   rules:
-    - host: "devopsgirls.blah.com"
+    - host: "devopsrep.blah.com"
       http:
         paths:
           - backend:
-              serviceName: "devopsgirls-service"
+              serviceName: "devopsrep-service"
               servicePort: 80
             path: /

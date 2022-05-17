@@ -3,16 +3,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "devopsgirls-deployment"
+  name: "devopsrep-deployment"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "devopsgirls"
+      app: "devopsrep"
   template:
     metadata:
       labels:
-        app: "devopsgirls"
+        app: "devopsrep"
     spec:
       containers:
         - image: "nginx:alpine"

@@ -56,14 +56,14 @@ After this, all we need to do is create a cluster.
 ### Setting up a Cluster
 
 
-Type in the following command to create a single-node cluster called `devops-girls` (Feel free to use any cluster name!):
+Type in the following command to create a single-node cluster called `devops-rep` (Feel free to use any cluster name!):
 
 ```
-gcloud container clusters create devops-girls --num-nodes=1
+gcloud container clusters create devops-rep --num-nodes=1
 ```
 You'll see the following:
 
-`Creating cluster devops-girls in australia-southeast1-a... Cluster is being health-checked...`
+`Creating cluster devops-rep in australia-southeast1-a... Cluster is being health-checked...`
 
 Like the previous steps, this may take some time - so maybe make another cup of tea. ☕️
 
@@ -78,10 +78,10 @@ When it finishes, you'll see this:
 Once it finishes, the only command left to run is to get the credentials to the cluster:
 
 ```
-gcloud container clusters get-credentials devops-girls
+gcloud container clusters get-credentials devops-rep
 ```
 
-Where `devops-girls` is what you called your cluster. And now you're done and you should see lines like this in your console!
+Where `devops-rep` is what you called your cluster. And now you're done and you should see lines like this in your console!
 
 ![Credentials](images/11-final-output.png)
 
@@ -89,7 +89,7 @@ Where `devops-girls` is what you called your cluster. And now you're done and yo
 After you've setup an environment with Docker and Kubernetes, you're going to need some files from this repository for parts of this workshop. Make sure you clone the workshop in your Google Web Console:
 
 ```
-git clone https://github.com/DevOps-Girls/kubernetes-101.git
+git clone https://github.com/DevOps-Represent/kubernetes-101.git
 cd kubernetes-101
 ```
 

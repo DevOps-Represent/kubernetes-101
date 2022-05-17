@@ -31,10 +31,10 @@ kubectl describe nodes node1
 Finally, we can also run pods. We can run a pod using the reference Docker image `nginx` in the cluster with one command:
 
 ```
-kubectl run devopsgirls --image=nginx
+kubectl run devopsrep --image=nginx
 ```
 
-Where `--image=nginx` specifies that image that we're running on our cluster, and `devopsgirls` is the name of our pod. Once we execute the above, we can list out all the pods running in the cluster by doing a `get`:
+Where `--image=nginx` specifies that image that we're running on our cluster, and `devopsrep` is the name of our pod. Once we execute the above, we can list out all the pods running in the cluster by doing a `get`:
 
 ```
 kubectl get pods
@@ -45,13 +45,13 @@ Do you see your pods in the list? It should look like this:
 ```
 $ kubectl get pods
 NAME          READY   STATUS              RESTARTS   AGE
-devopsgirls   0/1     ContainerCreating   0          2m41s
+devopsrep   0/1     ContainerCreating   0          2m41s
 ```
 
 If you're happy with that, we can remove the pod with the following command:
 
 ```
-kubectl delete pod devopsgirls
+kubectl delete pod devopsrep
 ```
 
 And we're cleaned up!
@@ -62,13 +62,13 @@ And we're cleaned up!
 We can recreate the pod again by running the following command:
 
 ```
-kubectl run devopsgirls --image=nginx
+kubectl run devopsrep --image=nginx
 ```
 
 This will recreate the pod. If you remember the previous commands, the `get` command grabs information regarding the pod that you specify. But did you know that there are several output types for that information? For example, you can run your `get` command like this:
 
 ```
-kubectl get pods devopsgirls -o yaml
+kubectl get pods devopsrep -o yaml
 ```
 
 This will format the output as YAML - a human-readable serialization language. Incidentally, this is the kind of format that Kubernetes expects when we create resources in the cluster. For example, see the file in`kubes/pod.yaml`:
@@ -79,9 +79,9 @@ This will format the output as YAML - a human-readable serialization language. I
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "devopsgirls-pod"
+  name: "devopsrep-pod"
   labels:
-    name: "devopsgirls-pod"
+    name: "devopsrep-pod"
 spec:
   containers:
     - image: "nginx:alpine"
@@ -97,7 +97,7 @@ kubectl apply -f kubes/pod.yaml
 You can see the pod being created if you list them, using the same command we used previously:
 
 ```
-kubectl get pods devopsgirls-pod
+kubectl get pods devopsrep-pod
 ```
 
 Isn't that neat? But what it also means, is that we can change the pods that we have by changing the files that we use to deploy. For example, if we change the YAML file in use so that the names are the same, but the properties are different, we can use `kubes/pod-changed.yaml` to update our pods. The `kubes/pod-changed.yaml` file contains the following:
@@ -108,9 +108,9 @@ Isn't that neat? But what it also means, is that we can change the pods that we 
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "devopsgirls-pod"
+  name: "devopsrep-pod"
   labels:
-    name: "devopsgirls-pod"
+    name: "devopsrep-pod"
 spec:
   containers:
     - image: "nginx:latest"
@@ -126,7 +126,7 @@ kubectl apply -f kubes/pod-changed.yaml
 Now, what do we see when we execute the following command?
 
 ```
-kubectl get pods devopsgirls-pod -o yaml
+kubectl get pods devopsrep-pod -o yaml
 ```
 
 UP NEXT...
