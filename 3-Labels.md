@@ -84,7 +84,7 @@ NAME                    TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    AG
 devopsrep-service     ClusterIP   10.105.91.242    X.X.X.X        8000/TCP   5s
 ```
 
-Now try accessing the service with your browser using the URL `http://X.X.X.X:8000` - where you need to replace `X.X.X.X` with the IP displayed above.
+Now try accessing the service with your browser using the URL `http://X.X.X.X` - where you need to replace `X.X.X.X` with the IP displayed above.
 
 Now...what happens if we remove one of the pods that the service is connected to? What we're going to find is that the service stays up - because *now* our infrastructure is highly available, as there are multiple pods running at the same time.
 
