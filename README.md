@@ -44,3 +44,18 @@ After the workshop, simply remove the cluster by clicking on the *bin* button on
 
 ![Google Won't Charge](images/15-cleanup.png)
 
+## Next Steps
+
+*If you enjoyed working with Kubernetes for this workshop, you might be interested in the following:*
+
+### Certified Kubernetes Adminstrator Exam
+This workshop covers many of the fundamentals for doing your [Certified Kubernetes Adminstrator Exam](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/)
+
+Some topics to study further to help you pass the exam are
+
+* The Kubernetes Command Line Tools - [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
+* Pipes and Redirects
+* Kubernetes and JSON
+
+Extra Labs for you to try
+* https://kubernetes.courselabs.co/
